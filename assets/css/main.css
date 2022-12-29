@@ -1,6 +1,6 @@
 :root{
     --bg-color: #262626;
-    --fg-color: #44ff00;
+    --fg-color: red;
     --bgdark-color: #202020;
 }
 html{
@@ -15,6 +15,9 @@ body{
     font-family: Arial, Helvetica, sans-serif;
 }
 #header{
+    position: fixed;
+    top: 0;
+    z-index: 2;
     display: flex;
     min-height: 5rem;
     width: 100%;
@@ -30,7 +33,7 @@ a{
     transition: .3s ease-in-out;
 }
 a:hover{
-    color: #44ff00;
+    color: var(--fg-color);
     filter: drop-shadow(0px 0px 5px var(--fg-color));
 }
 :visited{
@@ -53,10 +56,28 @@ a:hover{
     margin-top: 1.3rem;
     font-size: 200%;
 }
+.noflex{
+    display: inline-block;
+}
 #content{
     margin: 2rem 4em;
     display: flex;
 }
+.section{
+    height: 98vh;
+    border-bottom: 1px solid #404040;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 400%;
+    font-weight: bold;
+    background-size: cover;
+}
+.section:hover ~ * ~ a{
+    filter: none;
+}
+
+/*Videos*/
 #left{
     padding: 2rem;
 }
@@ -100,10 +121,10 @@ iframe{
 
 /*Personen*/
 #jan{
-    background-color: green;
+    background-color: white;
 }
 #jan:hover{
-    filter: drop-shadow(0px 0px 10px green);
+    filter: drop-shadow(0px 0px 10px white);
 }
 #vincent{
     background-color: rgb(166, 0, 166);
