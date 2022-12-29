@@ -1,0 +1,124 @@
+:root{
+    --bg-color: #262626;
+    --fg-color: #44ff00;
+    --bgdark-color: #202020;
+}
+html{
+    scrollbar-width: thin;
+    scroll-behavior: smooth;
+}
+body{
+    background-color: var(--bg-color);
+    min-height: 98vh;
+    margin: 0;
+    color: white;
+    font-family: Arial, Helvetica, sans-serif;
+}
+#header{
+    display: flex;
+    min-height: 5rem;
+    width: 100%;
+    background-color: var(--bgdark-color);
+}
+img{
+    width: 100%;
+    height: auto;
+}
+a{
+    text-decoration: none;
+    color: white;
+    transition: .3s ease-in-out;
+}
+a:hover{
+    color: #44ff00;
+    filter: drop-shadow(0px 0px 5px var(--fg-color));
+}
+:visited{
+    color: white;
+}
+#home{
+    margin-left: 2rem;
+    margin-top: 0.2rem;
+    margin-right: 70%;
+}
+#home:hover{
+    filter: none;
+}
+.navlink{
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: 1.3rem;
+    font-size: 200%;
+}
+#content{
+    margin: 2rem 4em;
+    display: flex;
+}
+#left{
+    padding: 2rem;
+}
+#right{
+    margin-top: 2rem;
+    min-height: 15rem;
+}
+.title{
+    font-size: 150%;
+    text-decoration: underline;
+}
+.info{
+    margin-top: 1rem;
+    margin-left: 0.3rem;
+}
+#profiles{
+    display: flex;
+    width: 100%;
+    margin-top: 7rem;
+}
+.profile{
+    width: 4rem;
+    height: 4rem;
+    margin-left: 1rem;
+    margin-right: 1rem;
+    border-radius: 50%;
+    background-color: #202020;
+}
+.profile img{
+    border-radius: 50%;
+}
+#date{
+    margin-top: 3rem;
+    font-size: 80%;
+    color: rgb(148, 148, 148);
+}
+
+/*Personen*/
+#jan{
+    background-color: green;
+}
+#jan:hover{
+    filter: drop-shadow(0px 0px 10px green);
+}
+#vincent{
+    background-color: rgb(166, 0, 166);
+}
+#vincent:hover{
+    filter: drop-shadow(0px 0px 10px rgb(166, 0 , 166));
+}
+#niklas{
+    background-color: rgb(138, 138, 0);
+}
+#niklas:hover{
+    filter: drop-shadow(0px 0px 10px rgb(138, 138, 0));
+}
+#ilan{
+    background-color: rgb(140, 0, 0);
+}
+#ilan:hover{
+    filter: drop-shadow(0px 0px 10px rgb(140, 0, 0));
+}
+#luca{
+    background-color: rgb(0, 0, 162);
+}
+#luca:hover{
+    filter: drop-shadow(0px 0px 10px rgb(0, 0, 162));
+}
