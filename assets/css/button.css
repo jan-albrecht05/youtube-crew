@@ -75,3 +75,23 @@ a:hover .circle .icon.arrow{
 a:hover .a-text{
     color: #ffffff;
 }
+@media (max-width: 400px){
+    a:hover .circle {
+        width: 180px;
+    }
+}
+@media (max-width: 600px){
+    a:hover .circle {
+        width: 200px;
+    }
+}
+@media (max-width: 800px){
+    a:hover .circle {
+        width: 220px;
+    }
+}
+@media (max-width: 1000px){
+    a:hover .circle {
+        width: 220px;
+    }
+}

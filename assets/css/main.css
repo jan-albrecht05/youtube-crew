@@ -201,6 +201,20 @@ iframe{
     #homeindex{
         margin-right: 30%;
     }
+    .section{
+        display: block;
+        height: fit-content;
+        padding-left: 1rem;
+        padding-right: 1rem;
+        margin-left: 1rem;
+        margin-right: 1rem;
+    }
+    .text{
+        width: 100%;
+    }
+    .img{
+        width: 100%;
+    }
 }
 @media (max-width: 600px) {
     #homeindex{
