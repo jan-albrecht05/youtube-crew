@@ -201,6 +201,9 @@ iframe{
     #homeindex{
         margin-right: 30%;
     }
+    #firstchild{
+        margin-top: 1rem;
+    }
     .section{
         display: block;
         height: fit-content;
