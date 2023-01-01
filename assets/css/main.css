@@ -363,6 +363,9 @@ iframe{
     #warning{
         font-size: 100%;
     }
+    #socials a{
+        margin-right: 0.2rem;
+    }
 }
 @media (max-width: 400px) {
     #homeindex{
