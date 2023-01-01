@@ -8,6 +8,8 @@ a.about-me{
     padding: 0;
     font-size: inherit;
     font-family: inherit;
+    display: flex;
+    align-items: center;
 }
 
 a.about-me:hover{
@@ -52,9 +54,8 @@ a.about-me .circle .icon.arrow::before{
 a.about-me .a-text{
     transition: 0.45s cubic-bezier(0.65, 0, 0.076, 1);
     position: absolute;
-    padding-top: 01rem;
     height: 3rem;
-    margin-top: -3rem;
+    margin-top: 2rem;
     margin-left: 5rem;
     width: max-content;
     color: red;
