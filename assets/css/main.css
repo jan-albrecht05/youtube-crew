@@ -47,7 +47,8 @@ a:hover{
     margin-top: 0.2rem;
     width: 13rem;
 }
-#homeindex:hover{
+#homeindex:hover,
+#socials a:hover{
     filter: none;
 }
 .navlink:first-child{
@@ -86,7 +87,7 @@ a:hover{
     width: 40%;
 }
 
-/*Profil*/
+/*Profil, Video, Files*/
 .person,
 .video,
 .file{
@@ -223,6 +224,27 @@ iframe{
 }
 #luca:hover{
     filter: drop-shadow(0px 0px 10px rgb(0, 0, 162));
+}
+
+/*Socials*/
+.account{
+    margin-top: 7rem;
+}
+#socials{
+    margin-top: 2rem;
+    width: 80%;
+    margin-left: auto;
+    margin-right: auto;
+    display: flex;
+}
+#socials a{
+    width: 5rem;
+    height: auto;
+    margin-right: 1rem;
+    transition: all .2s ease-in-out;
+}
+#socials a:hover{
+    transform: scale(1.1);
 }
 
 @media (max-width: 1500px) {
