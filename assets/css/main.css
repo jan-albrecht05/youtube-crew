@@ -83,6 +83,42 @@ a:hover{
     width: 40%;
 }
 
+/*Profil*/
+.person{
+    margin-top: 2rem;
+    border-bottom: 1px solid #404040;
+    display: flex;
+}
+.profilepic{
+    width: 30%;
+    height: auto;
+    border-radius: 80%;
+}
+.person #left{
+    width: 30%;
+    text-align: center;
+}
+.person #right{
+    padding-top: 1rem;
+}
+a.person:hover{
+    filter: none;
+    color: white;
+}
+.out{
+    display: block;
+    height: 1rem;
+    width: 20rem;
+    border: 1px solid #404040;
+    background-color: #303030;
+}
+.in{
+    display: block;
+    background-color: red;
+    height: 1rem;
+    transition: all .2s;
+}
+
 /*Videos*/
 #left{
     padding: 2rem;
@@ -218,6 +254,9 @@ iframe{
     .img{
         width: 100%;
     }
+    #firstchild{
+        margin-top: 5rem;
+    }
 }
 @media (max-width: 600px) {
     #homeindex{
@@ -232,6 +271,12 @@ iframe{
         margin-left: auto;
         margin-right: auto;
     }
+    .person #right{
+        margin-left: 2rem;
+    }
+    .person #left{
+        display: none;
+    }
 }
 @media (max-width: 400px) {
     #homeindex{
@@ -242,5 +287,11 @@ iframe{
         height: 190px;
         margin-left: auto;
         margin-right: auto;
+    }
+    .person #right{
+        margin-left: 1rem;
+    }
+    .out{
+        width: 19rem;
     }
 }
