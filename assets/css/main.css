@@ -87,7 +87,9 @@ a:hover{
 }
 
 /*Profil*/
-.person{
+.person,
+.video,
+.file{
     margin-top: 2rem;
     border-bottom: 1px solid #404040;
     display: flex;
@@ -96,15 +98,22 @@ a:hover{
     width: 30%;
     height: auto;
     border-radius: 80%;
+    transition: all .2s ease-in-out;
 }
-.person #left{
+.person #left,
+.video #left,
+.file #left{
     width: 30%;
     text-align: center;
 }
-.person #right{
+.person #right,
+.video #right,
+.file #right{
     padding-top: 1rem;
 }
-a.person:hover{
+a.person:hover,
+a.video:hover,
+.file a:hover{
     filter: none;
     color: white;
 }
@@ -120,6 +129,24 @@ a.person:hover{
     background-color: red;
     height: 1rem;
     transition: all .2s;
+}
+
+#warning{
+    margin-top: 7rem;
+    text-align: center;
+    font-size: 200%;
+    color: #6e6e6e;
+    border: 1px solid #6e6e6e;
+    width: max-content;
+    margin-left: auto;
+    margin-right: auto;
+    padding: .4rem;
+    border-radius: 6px;
+}
+#warningimg{
+    height: 2rem;
+    width: auto;
+    padding-top: .2rem;
 }
 
 /*Videos*/
@@ -154,6 +181,7 @@ iframe{
     margin-right: 1rem;
     border-radius: 50%;
     background-color: #202020;
+    transition: all .2s ease-in-out;
 }
 .profile img{
     border-radius: 50%;
@@ -163,6 +191,7 @@ iframe{
     font-size: 80%;
     color: rgb(148, 148, 148);
 }
+
 
 /*Personen*/
 #jan{
@@ -235,6 +264,19 @@ iframe{
     iframe{
         transform: scale(0.8);
     }
+    .video{
+        display: block;
+    }
+    .video #left{
+        width: 80%;
+        max-width: 30rem;
+        margin-left: auto;
+        margin-right: auto;
+    }
+    .video #right{
+        margin-left: 1rem;
+        margin-right: 1rem;
+    }
 }
 @media (max-width: 800px) {
     #homeindex{
@@ -243,13 +285,17 @@ iframe{
     #firstchild{
         margin-top: 1rem;
     }
-    .section{
+    .section,
+    .file{
         display: block;
         height: fit-content;
         padding-left: 1rem;
         padding-right: 1rem;
         margin-left: 1rem;
         margin-right: 1rem;
+    }
+    .file #left{
+        width: 100%;
     }
     .text{
         width: 100%;
@@ -259,6 +305,9 @@ iframe{
     }
     #firstchild{
         margin-top: 5rem;
+    }
+    #warning{
+        font-size: 150%;
     }
 }
 @media (max-width: 600px) {
@@ -280,6 +329,18 @@ iframe{
     .person #left{
         display: none;
     }
+    #warning{
+        font-size: 120%;
+    }
+    #warningimg{
+        width: 1.5rem;
+        height: auto;
+    }
+}
+@media (max-width: 460px) {
+    #warning{
+        font-size: 100%;
+    }
 }
 @media (max-width: 400px) {
     #homeindex{
@@ -296,5 +357,12 @@ iframe{
     }
     .out{
         width: 19rem;
+    }
+    #warning{
+        font-size: 90%;
+    }
+    #warningimg{
+        width: 1rem;
+        height: auto;
     }
 }
