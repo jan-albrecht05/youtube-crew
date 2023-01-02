@@ -208,6 +208,7 @@ iframe{
 }
 #date{
     margin-top: 3rem;
+    margin-bottom: 3rem;
     font-size: 80%;
     color: rgb(148, 148, 148);
 }
