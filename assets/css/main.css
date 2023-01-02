@@ -144,6 +144,12 @@ a.video:hover,
     padding: .4rem;
     border-radius: 6px;
 }
+#warning a{
+    color: #6e6e6e;
+}
+#warning a:hover{
+    color: red;
+}
 #warningimg{
     height: 2rem;
     width: auto;
@@ -242,6 +248,7 @@ iframe{
 /*Account*/
 .account{
     margin-top: 7rem;
+    margin-bottom: 3rem;
 }
 /*Info-Section*/
 #top{
