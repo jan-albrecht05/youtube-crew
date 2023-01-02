@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>YouTube Team | Luca</title>
+    <link rel="stylesheet" href="/assets/css/main.css">
+</head>
+<body>
+    <div id="header">
+        <a href="/index.html" id="homeindex">
+            <img src="/assets/img/team.png" id="home">
+        </a>
+        <a href="/projects/projects.html" class="navlink">
+            Projekte
+        </a>
+        <a href="/data/data.html" class="navlink">
+            Datein
+        </a>
+    </div>
+    <div class="account">
+        <!--Info-section-->
+        <div id="top">
+            <div id="profilbild">
+                <img src="/assets/img/icons/profile.png" class="profilbild" id="luca"><br>
+                <span class="name">Luca Nino Bergmayer</span>
+            </div>
+            <div id="beschreibung">
+                
+            </div>
+        </div>
+        <!--Socials-->
+        <div id="socials">
+            <a href="https://www.instagram.com/lucaniman_zockt/" target="_blank" title="Instagram">
+                <img src="/assets/img/icons/socials/instagram.png">
+            </a>
+            <a href="https://discordapp.com/users/697110065563435049" target="_blank" title="Discord">
+                <img src="/assets/img/icons/socials/discord.png">
+            </a>
+            <a href="https://www.twitch.tv/der_zocker207" target="_blank" title="Twitch">
+                <img src="/assets/img/icons/socials/twitch.png">
+            </a>
+            <a href="https://www.youtube.com/@derzocker207" target="_blank" title="YouTube">
+                <img src="/assets/img/icons/socials/youtube.png">
+            </a>
+        </div>
+        <!--Dropdowns-->
+        <div id="dropdown">
+            <script src="/assets/js/dropdown.js"></script>
+            <button id="openvideos" class="active button" onclick="openvideos()">Videos</button>
+            <button id="closevideos" class="notactive button" onclick="closevideos()">Videos</button>
+            <div id="videos">
+                <i>Luca hat bisher an keinem Video mitgearbeitet</i>
+            </div>
+            <button id="openequip" class="active button" onclick="openeqip()" style="margin-top: 2rem;">Equipment</button>
+            <button id="closeequip" class="notactive button" onclick="closeeqip()" style="margin-top: 2rem;">Equipment</button>
+            <div id="equipment">
+                ID: Equipment
+            </div>
+        </div>
+    </div>
+</body>
+</html>

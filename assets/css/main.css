@@ -26,6 +26,7 @@ body{
 img{
     width: 100%;
     height: auto;
+    user-select: none;
 }
 a{
     text-decoration: none;
@@ -305,9 +306,6 @@ iframe{
     color: white;
     transition: all .3s;
 }
-.button:nth-child(2){
-    margin-top: 2rem;
-}
 .button:hover{
     background-color: #303030;
     filter: drop-shadow(0px 0px 5px white);
@@ -327,6 +325,13 @@ iframe{
 }
 #videos .side #right{
     width: 100%;
+}
+/*Equipment*/
+#openequip,
+#closeequip,
+#equipment{
+    display: none;
+    opacity: 0;
 }
 
 @media (max-width: 1500px) {
