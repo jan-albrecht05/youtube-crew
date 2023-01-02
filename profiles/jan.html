@@ -21,6 +21,17 @@
         </a>
     </div>
     <div class="account">
+        <!--Info-section-->
+        <div id="top">
+            <div id="profilbild">
+                <img src="/assets/img/icons/jan.png" class="profilbild" id="jan"><br>
+                <span class="name">Jan Albrecht</span>
+            </div>
+            <div id="beschreibung">
+                lorem ipsum
+            </div>
+        </div>
+        <!--Socials-->
         <div id="socials">
             <a href="https://instagram.com/jan_albrecht/" target="_blank" title="Instagram">
                 <img src="/assets/img/icons/socials/instagram.png">
@@ -28,13 +39,13 @@
             <a href="https://facebook.com/jan.albrecht.96387" target="_blank" title="Facebook">
                 <img src="/assets/img/icons/socials/facebook.png">
             </a>
-            <a href="https://bere.al/" target="_blank" title="BaReal">
+            <a href="https://bere.al/jan_albrecht" target="_blank" title="BaReal">
                 <img src="/assets/img/icons/socials/bereal.png">
             </a>
             <a href="https://tellonym.me/jan_albrecht" target="_blank" title="Tellonym">
                 <img src="/assets/img/icons/socials/tellonym.png">
             </a>
-            <a href="https://www.discord.gg/" target="_blank" title="Discord">
+            <a href="https://discordapp.com/users/783407776084000788" target="_blank" title="Discord">
                 <img src="/assets/img/icons/socials/discord.png">
             </a>
             <a href="https://www.youtube.com/@jan_albrecht" target="_blank" title="YouTube">
@@ -52,6 +63,116 @@
             <a href="https://janalbrecht.tech" target="_blank" title="janalbrecht.tech">
                 <img src="https://janalbrecht.tech/bilder/logos/JA_Coding(green).png">
             </a>
+        </div>
+        <!--Dropdowns-->
+        <div id="dropdown">
+            <script src="/assets/js/dropdown.js"></script>
+            <button id="openvideos" class="active button" onclick="openvideos()">Videos</button>
+            <button id="closevideos" class="notactive button" onclick="closevideos()">Videos</button>
+            <div id="videos">
+            <!--Plätzchen-->
+                <a href="/projects/2022/dec/006.html" class="video">
+                    <div id="left" class="side">
+                        <img src="/assets/img/thumbnails/plaetzchen.png" class="thumbnail">
+                    </div>
+                    <div id="right" class="side">
+                        <div class="title">
+                        <h3>
+                            In der Weihnachsbäckerei der <nobr>Prinz-von-Homburg-Schule</nobr> 🎅</h3>
+                        </div>
+                        <div class="info">
+                            <div id="date">
+                                05.12.2022
+                            </div>
+                        </div>
+                    </div>
+                </a>
+            <!--Kartoffeln-->
+                <a href="/projects/2022/nov/005.html" class="video">
+                    <div id="left" class="side">
+                        <img src="/assets/img/thumbnails/WAT Garten.jpg" class="thumbnail">
+                    </div>
+                    <div id="right" class="side">
+                        <div class="title">
+                        <h3>Wir haben Kartoffeln! | WAT an der PvH</h3>
+                        </div>
+                        <div class="info">
+                            <div id="date">
+                                11.11.2022
+                            </div>
+                        </div>
+                    </div>
+                </a>
+            <!--Metall-->
+                <a href="/projects/2022/nov/004.html" class="video">
+                    <div id="left" class="side">
+                        <img src="/assets/img/thumbnails/WAT Trailer.png" class="thumbnail">
+                    </div>
+                    <div id="right" class="side">
+                        <div class="title">
+                        <h3>W-A-T Unterricht an der Prinz-von-Homburg-Schule</h3>
+                        </div>
+                        <div class="info">
+                            <div id="date">
+                                09.11.2022
+                            </div>
+                        </div>
+                    </div>
+                </a>
+            <!--#SayHi2022-->
+                <a href="/projects/2022/oct/003.html" class="video">
+                    <div id="left" class="side">
+                        <img src="/assets/img/thumbnails/SayHi2022.png" class="thumbnail">
+                    </div>
+                    <div id="right" class="side">
+                        <div class="title">
+                        <h3>#SayHi!2022 - Horttanzgruppe Neustadt (Dosse)</h3>
+                        </div>
+                        <div class="info">
+                            <div id="date">
+                                25.10.2022
+                            </div>
+                        </div>
+                    </div>
+                </a>
+            <!--Hengstparade 2022-->
+                <a href="/projects/2022/oct/002.html" class="video">
+                    <div id="left" class="side">
+                        <img src="/assets/img/thumbnails/reitschueler_2022.png" class="thumbnail">
+                    </div>
+                    <div id="right" class="side">
+                        <div class="title">
+                        <h3>Unsere Reitschüler auf der Hengstparade 2022 in <nobr>Neustadt (Dosse)</nobr></h3>
+                        </div>
+                        <div class="info">
+                            <div id="date">
+                                09.10.2022
+                            </div>
+                        </div>
+                    </div>
+                </a>
+            <!--Sportfest 2022-->
+                <a href="/projects/2022/oct/001.html" class="video">
+                    <div id="left" class="side">
+                        <img src="/assets/img/thumbnails/sportfest_2022.png" class="thumbnail">
+                    </div>
+                    <div id="right" class="side">
+                        <div class="title">
+                        <h3>Eine DROHNE bei unserem SPORTFEST 😱😱😱</h3>
+                        </div>
+                        <div class="info">
+                            <div id="date">
+                                07.10.2022
+                            </div>
+                        </div>
+                    </div>
+                </a>
+            </div>
+            <button id="openequip" class="active button" onclick="openeqip()" style="margin-top: 2rem;">Equipment</button>
+            <button id="closeequip" class="notactive button" onclick="closeeqip()" style="margin-top: 2rem;">Equipment</button>
+            <div id="equipment">
+                ID: Equipment
+            </div>
         </div>
     </div>
 </body>

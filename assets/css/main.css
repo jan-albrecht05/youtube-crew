@@ -151,6 +151,10 @@ a.video:hover,
 }
 
 /*Videos*/
+a.video{
+    max-height: min-content;
+    padding: 0;
+}
 #left{
     padding: 2rem;
 }
@@ -161,6 +165,7 @@ iframe{
 #right{
     margin-top: 2rem;
     min-height: 15rem;
+    width: 70%;
 }
 .title{
     font-size: 150%;
@@ -226,16 +231,51 @@ iframe{
     filter: drop-shadow(0px 0px 10px rgb(0, 0, 162));
 }
 
-/*Socials*/
+/*Account*/
 .account{
     margin-top: 7rem;
 }
+/*Info-Section*/
+#top{
+    display: flex;
+    margin-bottom: 3rem;
+    border-bottom: 1px solid #404040;
+    padding-bottom: 1rem;
+    width: 80%;
+    margin-left: auto;
+    margin-right: auto;
+}
+#profilbild{
+    text-align: center;
+    width: 35%;
+    border-right: 1px solid #404040;
+    margin-right: 5%;
+}
+.profilbild{
+    width: 10rem;
+    height: auto;
+    border-radius: 70%;
+    transition: all .2s ease-in-out;
+}
+.name{
+    font-size: 120%;
+    color: #a0a0a0;
+}
+#beschreibung{
+    width: 60%;
+    text-align: left;
+    padding: 1rem;
+}
+/*Socials*/
 #socials{
     margin-top: 2rem;
+    padding-bottom: 2rem;
+    margin-bottom: 2rem;
     width: 80%;
     margin-left: auto;
     margin-right: auto;
     display: flex;
+    border-bottom: 1px solid #404040;
 }
 #socials a{
     width: 5rem;
@@ -246,6 +286,48 @@ iframe{
 #socials a:hover{
     transform: scale(1.1);
 }
+/*Dropdowns*/
+#dropdown{
+    width: 80%;
+    margin-left: auto;
+    margin-right: auto;
+}
+.button{
+    height: 3rem;
+    width: 10rem;
+    font-size: 120%;
+    font-weight: bold;
+    outline: none;
+    border: 1px solid white;
+    border-radius: 5px;
+    margin-bottom: 1rem;
+    background-color: #404040;
+    color: white;
+    transition: all .3s;
+}
+.button:nth-child(2){
+    margin-top: 2rem;
+}
+.button:hover{
+    background-color: #303030;
+    filter: drop-shadow(0px 0px 5px white);
+}
+.active{
+    display: block;
+}
+.notactive{
+    display: none;
+}
+#videos,
+#equipment{
+    display: none;
+}
+#videos .video{
+    max-height: max-content;
+}
+#videos .side #right{
+    width: 100%;
+}
 
 @media (max-width: 1500px) {
     #homeindex{
@@ -255,6 +337,9 @@ iframe{
 @media (max-width: 1215px) {
     #homeindex{
         margin-right: 50%;
+    }
+    .video{
+        max-height: 15rem;
     }
 }
 @media (max-width: 1000px) {
@@ -295,9 +380,15 @@ iframe{
         margin-left: auto;
         margin-right: auto;
     }
+    #videos .video #left{
+        width: 100%;
+    }
     .video #right{
         margin-left: 1rem;
         margin-right: 1rem;
+    }
+    .video{
+        max-height: 31rem;
     }
 }
 @media (max-width: 800px) {
@@ -331,6 +422,20 @@ iframe{
     #warning{
         font-size: 150%;
     }
+    .video{
+        max-height: 30rem;
+    }
+    #videos .video #right{
+        width: 100%;
+    }
+}
+@media (max-width: 650px){
+    #profilbild{
+        padding-right: 0.5rem;
+    }
+    .video{
+        max-height: 28rem;
+    }
 }
 @media (max-width: 600px) {
     #homeindex{
@@ -358,6 +463,34 @@ iframe{
         width: 1.5rem;
         height: auto;
     }
+    #top{
+        display: block;
+    }
+    #profilbild{
+        width: 100%;
+        border-right: none;
+        padding-bottom: 1rem;
+        border-bottom: 1px solid #404040;
+    }
+    #socials{
+        margin-top: -1rem;
+    }
+    #videos a #left{
+        padding: 0;
+        width: 100%;
+    }
+    #videos #right{
+        padding: 0;
+        margin-left: 0;
+        width: 100%;
+        max-height: 5rem;
+    }
+    #videos a #right .info{
+        margin-top: -1.5rem;
+    }
+    .video{
+        max-height: 26rem;
+    }
 }
 @media (max-width: 460px) {
     #warning{
@@ -365,6 +498,9 @@ iframe{
     }
     #socials a{
         margin-right: 0.2rem;
+    }
+    .video{
+        max-height: 24rem;
     }
 }
 @media (max-width: 400px) {
@@ -389,5 +525,8 @@ iframe{
     #warningimg{
         width: 1rem;
         height: auto;
+    }
+    .video{
+        max-height: 22rem;
     }
 }
