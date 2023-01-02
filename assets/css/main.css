@@ -132,7 +132,6 @@ a.video:hover,
     height: 1rem;
     transition: all .2s;
 }
-
 #warning{
     margin-top: 7rem;
     text-align: center;
@@ -149,6 +148,14 @@ a.video:hover,
     height: 2rem;
     width: auto;
     padding-top: .2rem;
+}
+
+/*Erfahrung*/
+.erfahrung{
+    display: none;
+}
+.out{
+    display: none;
 }
 
 /*Videos*/
