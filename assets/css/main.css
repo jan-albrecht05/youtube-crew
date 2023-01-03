@@ -234,10 +234,10 @@ iframe{
     filter: drop-shadow(0px 0px 10px rgb(138, 138, 0));
 }
 #ilan{
-    background-color: #38043b;
+    background-color: #008197;
 }
 #ilan:hover{
-    filter: drop-shadow(0px 0px 10px #38043b);
+    filter: drop-shadow(0px 0px 10px #008197);
 }
 #luca{
     background-color: rgb(110, 110, 110);
