@@ -2,6 +2,7 @@
     --bg-color: #262626;
     --fg-color: red;
     --bgdark-color: #202020;
+    --short: rgb(0, 119, 255);
 }
 html{
     scrollbar-width: thin;
@@ -201,6 +202,10 @@ iframe{
 .title{
     font-size: 150%;
     text-decoration: underline;
+}
+.shorts{
+    color: var(--short);
+    text-decoration: underline var(--short);
 }
 .info{
     margin-top: 1rem;
