@@ -190,7 +190,8 @@ a.video{
 #left{
     padding: 2rem;
 }
-iframe{
+iframe,
+.iframe{
     width: 560px;
     height: 315px;
 }
