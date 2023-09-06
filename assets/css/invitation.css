@@ -10,7 +10,7 @@ body{
     font-family: Arial, Helvetica, sans-serif;
     min-height: 97vh;
     margin: 0;
-    padding-bottom: 5rem;
+    padding-bottom: 3rem;
 }
 #main{
     width: 90%;
@@ -63,4 +63,20 @@ li{
 .btn img{
     height: 100%;
     width: auto;
+}
+#treffen{
+    margin-top: 2rem;
+    font-size: 120%;
+    text-align: center;
+    font-weight: bold;
+}
+p{
+    margin: 0;
+    font-weight: normal;
+}
+@media (min-width: 700px){
+    #main{
+        width: 30%;
+        margin-inline: auto;
+    }
 }
