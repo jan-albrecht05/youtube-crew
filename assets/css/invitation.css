@@ -74,9 +74,15 @@ p{
     margin: 0;
     font-weight: normal;
 }
-@media (min-width: 700px){
+@media (min-width: 800px){
     #main{
         width: 30%;
+        margin-inline: auto;
+    }
+}
+@media (800px < width < 1000px){
+    #main{
+        width: 50%;
         margin-inline: auto;
     }
 }
