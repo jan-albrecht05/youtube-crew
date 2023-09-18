@@ -272,6 +272,18 @@ iframe,
 #luca:hover{
     filter: drop-shadow(0px 0px 10px rgb(110, 110, 110));
 }
+#marei{
+    background-color: pink;
+}
+#marei:hover{
+    filter: drop-shadow(0px 0px 10px pink);
+}
+#ella{
+    background-color: greenyellow;
+}
+#ella:hover{
+    filter: drop-shadow(0px 0px 10px greenyellow);
+}
 
 /*Account*/
 .account{
