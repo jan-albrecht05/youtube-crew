@@ -35,6 +35,9 @@ img{
 li{
     margin-left: 1rem;
 }
+i{
+    font-size: 90%;
+}
 .btn{
     width: 85%;
     margin-inline: auto;
@@ -51,6 +54,11 @@ li{
 }
 #dc{
     background-color: var(--dc);
+}
+#insta{
+    background-image: linear-gradient(90deg, #833ab4,#fd1d1d,#fcb045);
+    border: 2px solid white;
+    margin-top: 0rem;
 }
 .btn span{
     margin-right: 1rem;
