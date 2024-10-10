@@ -290,6 +290,12 @@ iframe,
 #lena:hover{
     filter: drop-shadow(0px 0px 10px green);
 }
+#lucie{
+    background-color: #a87c2b;
+}
+#lucie:hover{
+    filter: drop-shadow(0px 0px 10px #a87c2b);
+}
 
 /*Account*/
 .account{
